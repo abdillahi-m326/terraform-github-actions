@@ -1,5 +1,5 @@
 variable "instance_type" {
-  type = string
+  type        = string
   description = "the type of instance"
 }
 
@@ -9,5 +9,5 @@ locals {
 
 output "instance_id" {
   description = "This is the ID of the EC2 instance"
-  value = module.ec2.instance_id
+  value       = module.ec2.instance_id
 }
